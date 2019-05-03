@@ -8,7 +8,7 @@
     "server": "nodemon server.js"
   },
   "author": "Thibault YOU",
-  "license": "UNLICENSED",
+  "license": "GLWTPL",
   "dependencies": {
     "axios": "0.18.0",
     "express": "4.16.4",
