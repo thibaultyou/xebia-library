@@ -9,7 +9,7 @@ const {
 } = require("graphql");
 
 const BookType = new GraphQLObjectType({
-  name: "BookType",
+  name: "Book",
   fields: () => ({
     isbn: { type: GraphQLString },
     title: { type: GraphQLString },
@@ -29,7 +29,7 @@ const OfferType = new GraphQLObjectType({
 });
 
 const RootQuery = new GraphQLObjectType({
-  name: "RootQueryType",
+  name: "Root",
   fields: {
     books: {
       type: new GraphQLList(BookType),
