@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint .; exit 0",
-    "server:dev": "nodemon server.js --exec 'npm run lint && node'",
-    "server": "nodemon server.js"
+    "lint": "eslint . --cache; exit 0",
+    "server:dev": "nodemon server.js --exec 'npm run prettier && npm run lint && node'",
+    "server": "nodemon server.js",
+    "prettier": "prettier --write *.{js,jsx,html,md,mdx,yaml,json,css,scss,less}"
   },
   "author": "Thibault YOU",
   "license": "GLWTPL",
@@ -19,6 +20,9 @@
   },
   "devDependencies": {
     "eslint": "5.16.0",
-    "nodemon": "1.19.0"
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "nodemon": "1.19.0",
+    "prettier": "1.17.0"
   }
 }
