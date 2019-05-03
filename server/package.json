@@ -5,6 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "lint": "eslint .; exit 0",
+    "server:dev": "nodemon server.js --exec 'npm run lint && node'",
     "server": "nodemon server.js"
   },
   "author": "Thibault YOU",
@@ -16,6 +18,7 @@
     "graphql": "14.2.1"
   },
   "devDependencies": {
+    "eslint": "5.16.0",
     "nodemon": "1.19.0"
   }
 }
