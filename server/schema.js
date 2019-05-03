@@ -5,8 +5,7 @@ const {
   GraphQLObjectType,
   GraphQLInt,
   GraphQLString,
-  GraphQLList,
-  GraphQLUnionType
+  GraphQLList
 } = require("graphql");
 
 const BookType = new GraphQLObjectType({
@@ -34,7 +33,7 @@ const RootQuery = new GraphQLObjectType({
   fields: {
     books: {
       type: new GraphQLList(BookType),
-      resolve(parent, args) {
+      resolve() {
         return axios
           .get("http://henri-potier.xebia.fr/books")
           .then(res => res.data);
