@@ -28,16 +28,37 @@ Before anything, you need the following software installed on your machine :
 
 Run in a terminal (`sudo` might be needed) :
 
+> Production mode
+
 ```sh
 docker-compose up
 ```
 
+or
+
+> Dev mode (you might rebuild your containers with `docker-compose build` when switching modes)
+
+```sh
+docker-compose -f docker-compose.dev.yml up
+```
+
 ## Cooking recipe
 
-- Express.js
-- Axios
-- GraphQL API server
-- Docker integration
+### Server core components
+
+- [Express.js](https://github.com/expressjs/express)
+- [Axios](https://github.com/axios/axios)
+- [GraphQL-js](https://github.com/graphql/graphql-js)
+
+### Testing
+
+- [Mocha](https://github.com/mochajs/mocha)
+- [EasyGraphQLTester](https://github.com/EasyGraphQL/easygraphql-tester)
+
+### Env.
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ## Credits
 
