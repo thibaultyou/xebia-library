@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint . --cache; exit 0",
-    "server:dev": "nodemon server.js --exec 'npm run prettier && npm run lint && node'",
-    "server": "nodemon server.js",
+    "server:dev": "NODE_ENV=development nodemon server.js --exec 'npm run prettier && npm run lint && node'",
+    "server": "NODE_ENV=production nodemon server.js",
     "prettier": "prettier --write *.{js,jsx,html,md,mdx,yaml,json,css,scss,less}"
   },
   "author": "Thibault YOU",
