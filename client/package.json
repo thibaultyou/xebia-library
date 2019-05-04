@@ -16,10 +16,13 @@
     "react-scripts": "3.0.0"
   },
   "scripts": {
+    "prettier": "prettier --write **/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}",
+    "lint": "eslint . --cache; exit 0",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "npm run prettier && npm run lint && CI=true npm run test && FORCE_COLOR=true npm run start | cat"
   },
   "eslintConfig": {
     "extends": "react-app"
