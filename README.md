@@ -48,6 +48,11 @@ or
 docker-compose -f docker-compose.dev.yml up
 ```
 
+Once your containers are started you can visit those links locally :
+
+- [Client](http://localhost:3000)
+- [Server](http://localhost:5000)
+
 ## Cooking recipe
 
 ### Client core components
