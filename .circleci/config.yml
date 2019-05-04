@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/xebia-library/server
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout:
+          path: ~/xebia-library
+      - run:
+          name: Updating npm
+          command: 'sudo npm install -g npm@6.9.0'
+      - run:
+          name: Installing dependencies
+          command: npm install
+      - run:
+          name: Running tests
+          command: npm run test:report
+          when: always
+      - store_test_results:
+          path: ./test-results.xml
+      - store_artifacts:
+          path: ./test-results.xml

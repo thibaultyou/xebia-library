@@ -2,12 +2,17 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Xebia library GraphQL API server",
+  "homepage": "https://github.com/thibaultyou/xebia-library#readme",
+  "engines": {
+    "node": ">=8"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "prettier": "prettier --write *.{js,jsx,html,md,mdx,yaml,json,css,scss,less}",
     "lint": "eslint . --cache; exit 0",
     "test": "mocha",
+    "test:report": "mocha test --reporter mocha-junit-reporter",
     "server:dev": "NODE_ENV=development nodemon server.js --exec 'npm run prettier && npm run lint && npm run test && node'",
     "server": "NODE_ENV=production nodemon server.js"
   },
@@ -25,6 +30,7 @@
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.2.0",
     "eslint-plugin-prettier": "3.0.1",
+    "mocha-junit-reporter": "1.22.0",
     "nodemon": "1.19.0",
     "prettier": "1.17.0"
   }
