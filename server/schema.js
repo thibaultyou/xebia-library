@@ -2,30 +2,11 @@ const axios = require('axios');
 const {
   GraphQLSchema,
   GraphQLObjectType,
-  GraphQLInt,
   GraphQLString,
   GraphQLList,
 } = require('graphql');
 
-const BookType = new GraphQLObjectType({
-  name: 'Book',
-  fields: () => ({
-    isbn: { type: GraphQLString },
-    title: { type: GraphQLString },
-    price: { type: GraphQLInt },
-    cover: { type: GraphQLString },
-    synopsis: { type: new GraphQLList(GraphQLString) },
-  }),
-});
-
-const OfferType = new GraphQLObjectType({
-  name: 'Offer',
-  fields: () => ({
-    type: { type: GraphQLString },
-    sliceValue: { type: GraphQLInt },
-    value: { type: GraphQLInt },
-  }),
-});
+const { BookType, OfferType } = require('./types');
 
 const RootQuery = new GraphQLObjectType({
   name: 'Root',
