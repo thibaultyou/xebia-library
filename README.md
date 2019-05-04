@@ -8,6 +8,9 @@
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Cooking recipe](#cooking-recipe)
+  * [Server core components](#server-core-components)
+  * [Testing](#testing)
+  * [Env.](#env)
 - [Credits](#credits)
 - [License](#license)
 
