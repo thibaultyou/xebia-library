@@ -1,5 +1,7 @@
 # Xebia coding challenge
 
+[![CircleCI](https://circleci.com/gh/thibaultyou/xebia-library/tree/master.svg?style=svg)](https://circleci.com/gh/thibaultyou/xebia-library/tree/master) &nbsp;&nbsp; [![GLWTPL](https://img.shields.io/badge/license-GLWTPL-blue.svg)](https://github.com/me-shaon/GLWTPL) &nbsp;&nbsp; [![LatestCommit](https://img.shields.io/github/last-commit/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library) &nbsp;&nbsp; [![Languages](https://img.shields.io/github/languages/top/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library)
+
 ## Table of contents
 
 <!-- toc -->
@@ -62,6 +64,7 @@ docker-compose -f docker-compose.dev.yml up
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
+- [CircleCI](https://circleci.com/)
 
 ## Credits
 
