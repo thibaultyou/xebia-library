@@ -1,8 +1,15 @@
 version: "3"
 services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    ports: ["0.0.0.0:3000:3000"]
+    volumes:
+      - ./client:/client
   server:
     build: ./server
     ports: ["0.0.0.0:5000:5000"]
     volumes:
       - ./server:/server
-    command: npm run server:dev
+    command: npm run start:dev

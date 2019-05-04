@@ -10,6 +10,7 @@
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Cooking recipe](#cooking-recipe)
+  * [Client core components](#client-core-components)
   * [Server core components](#server-core-components)
   * [Testing & quality](#testing--quality)
   * [Environment](#environment)
@@ -49,6 +50,11 @@ docker-compose -f docker-compose.dev.yml up
 
 ## Cooking recipe
 
+### Client core components
+
+- [React](https://github.com/facebook/react)
+- [NGINX](https://github.com/nginx/nginx)
+
 ### Server core components
 
 - [Express.js](https://github.com/expressjs/express)
@@ -64,6 +70,7 @@ docker-compose -f docker-compose.dev.yml up
 
 ### Environment
 
+- [Node.js](https://github.com/nodejs/node)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [CircleCI](https://circleci.com/)
