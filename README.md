@@ -1,6 +1,6 @@
 # Xebia coding challenge
 
-[![CircleCI](https://circleci.com/gh/thibaultyou/xebia-library/tree/master.svg?style=svg)](https://circleci.com/gh/thibaultyou/xebia-library/tree/master) &nbsp;&nbsp; [![GLWTPL](https://img.shields.io/badge/license-GLWTPL-blue.svg)](https://github.com/me-shaon/GLWTPL) &nbsp;&nbsp; [![LatestCommit](https://img.shields.io/github/last-commit/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library) &nbsp;&nbsp; [![Languages](https://img.shields.io/github/languages/top/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library)
+[![CircleCI](https://circleci.com/gh/thibaultyou/xebia-library.svg?style=svg)](https://circleci.com/gh/thibaultyou/xebia-library) &nbsp; [![GLWTPL](https://img.shields.io/badge/license-GLWTPL-blue.svg)](https://github.com/me-shaon/GLWTPL) &nbsp; [![LatestCommit](https://img.shields.io/github/last-commit/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library) &nbsp; [![Languages](https://img.shields.io/github/languages/top/thibaultyou/xebia-library.svg)](https://github.com/thibaultyou/xebia-library)
 
 ## Table of contents
 
@@ -11,8 +11,8 @@
 - [Usage](#usage)
 - [Cooking recipe](#cooking-recipe)
   * [Server core components](#server-core-components)
-  * [Testing](#testing)
-  * [Env.](#env)
+  * [Testing & quality](#testing--quality)
+  * [Environment](#environment)
 - [Credits](#credits)
 - [License](#license)
 
@@ -55,12 +55,14 @@ docker-compose -f docker-compose.dev.yml up
 - [Axios](https://github.com/axios/axios)
 - [GraphQL-js](https://github.com/graphql/graphql-js)
 
-### Testing
+### Testing & quality
 
 - [Mocha](https://github.com/mochajs/mocha)
 - [EasyGraphQLTester](https://github.com/EasyGraphQL/easygraphql-tester)
+- [EsLint](https://github.com/eslint/eslint)
+- [Prettier](https://github.com/prettier/prettier)
 
-### Env.
+### Environment
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
