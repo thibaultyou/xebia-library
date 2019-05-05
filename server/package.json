@@ -2,7 +2,6 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Xebia library GraphQL API server",
-  "homepage": "https://github.com/thibaultyou/xebia-library#readme",
   "engines": {
     "node": ">=8"
   },

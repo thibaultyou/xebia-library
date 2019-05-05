@@ -18,11 +18,11 @@ const LibraryAppBar = props => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton className={classes.homeButton} color="inherit">
-            <Link to="/" className={classes.link}>
+          <Link to="/" className={classes.link}>
+            <IconButton className={classes.homeButton} color="inherit">
               <BookIcon />
-            </Link>
-          </IconButton>
+            </IconButton>
+          </Link>
           <Typography
             className={classes.title}
             variant="h5"
@@ -32,13 +32,13 @@ const LibraryAppBar = props => {
             Xebia library
           </Typography>
           <div className={classes.grow} />
-          <IconButton aria-haspopup="true" color="inherit">
-            <Badge badgeContent={basket.length} color="secondary">
-              <Link to="/basket" className={classes.link}>
+          <Link to="/basket" className={classes.link}>
+            <IconButton aria-haspopup="true" color="inherit">
+              <Badge badgeContent={basket.length} color="secondary">
                 <ShoppingBasketIcon />
-              </Link>
-            </Badge>
-          </IconButton>
+              </Badge>
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>

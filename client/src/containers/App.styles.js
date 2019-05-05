@@ -1,10 +1,10 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
+import deepPurple from '@material-ui/core/colors/deepPurple';
 import styled from 'styled-components';
 
 export const theme = createMuiTheme({
   palette: {
-    primary: blue,
+    primary: deepPurple,
   },
   typography: {
     useNextVariants: true,

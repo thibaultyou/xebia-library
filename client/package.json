@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "description": "Xebia library React client",
-  "homepage": "https://github.com/thibaultyou/xebia-library#readme",
   "engines": {
     "node": ">=8"
   },

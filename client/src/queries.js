@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-const BOOKS_QUERY = gql`
+export const BOOKS_QUERY = gql`
   {
     books {
       isbn
@@ -12,4 +12,12 @@ const BOOKS_QUERY = gql`
   }
 `;
 
-export default BOOKS_QUERY;
+export const OFFERS_QUERY = gql`
+  query Offers($isbns: String!) {
+    offers(isbns: $isbns) {
+      value
+      type
+      sliceValue
+    }
+  }
+`;

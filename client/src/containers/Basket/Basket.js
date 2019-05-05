@@ -1,9 +1,9 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import BasketList from '../../components/BasketList';
 
 const Basket = () => (
   <div>
-    <Typography variant="h4">Basket</Typography>
+    <BasketList />
   </div>
 );
 export default Basket;

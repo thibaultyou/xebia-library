@@ -7,6 +7,9 @@ yarn-error.log*
 # Coverage
 coverage
 
+# Build dir
+build/
+
 # Dependency directories
 node_modules/
 

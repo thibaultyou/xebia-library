@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Query } from 'react-apollo';
-import BOOKS_QUERY from '../../queries';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
+import { BOOKS_QUERY } from '../../queries';
 import Notification from '../Notification';
 import LoadingIndicator from '../LoadingIndicator';
 import BookCard from './BookCard';

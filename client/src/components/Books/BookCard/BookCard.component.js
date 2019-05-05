@@ -34,7 +34,7 @@ const BookCard = props => {
               variant="outlined"
               onClick={() => addBook(book)}
             >
-              Add to basket ...
+              Add to cart
             </Button>
           </div>
         </CardContent>
