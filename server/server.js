@@ -1,5 +1,6 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+const cors = require('cors');
 const chalk = require('chalk');
 const log = console.log;
 const schema = require('./schema');
@@ -13,6 +14,8 @@ const app = express();
 const fallback = isDevEnv
   ? `<a href='http://localhost:${PORT}/graphql'>http://localhost:${PORT}/graphql</a> for testing !`
   : 'Hello from Express.js !';
+
+app.use(cors());
 
 app.get('/', function(req, res) {
   res.send(fallback);

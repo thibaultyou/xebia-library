@@ -58,13 +58,18 @@ Once your containers are started you can visit those links locally :
 ### Client core components
 
 - [React](https://github.com/facebook/react)
+- [Apollo](https://github.com/apollographql/apollo-client)
+- [Styled components](https://github.com/styled-components/styled-components)
+- [Material UI](https://github.com/mui-org/material-ui)
 - [NGINX](https://github.com/nginx/nginx)
+- [Node.js](https://github.com/nodejs/node)
 
 ### Server core components
 
 - [Express.js](https://github.com/expressjs/express)
 - [Axios](https://github.com/axios/axios)
 - [GraphQL-js](https://github.com/graphql/graphql-js)
+- [Node.js](https://github.com/nodejs/node)
 
 ### Testing & quality
 
@@ -75,7 +80,6 @@ Once your containers are started you can visit those links locally :
 
 ### Environment
 
-- [Node.js](https://github.com/nodejs/node)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [CircleCI](https://circleci.com/)
