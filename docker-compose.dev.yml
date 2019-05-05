@@ -4,11 +4,13 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile.dev
+    restart: unless-stopped
     ports: ["0.0.0.0:3000:3000", "0.0.0.0:35729:35729"]
     volumes:
       - ./client:/client
   server:
     build: ./server
+    restart: unless-stopped
     ports: ["0.0.0.0:5000:5000"]
     volumes:
       - ./server:/server
