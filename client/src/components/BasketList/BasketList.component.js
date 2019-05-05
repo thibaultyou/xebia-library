@@ -46,7 +46,8 @@ const BasketList = props => {
             const lowerPrice = getLowerPrice(initialPrice, withOffers);
             const reduction =
               Math.round((initialPrice - lowerPrice) * 100) / 100;
-            const total = lowerPrice < 0 ? 0 : lowerPrice;
+            const total =
+              lowerPrice < 0 ? 0 : Math.round(lowerPrice * 100) / 100;
 
             return (
               <Paper className={classes.root}>

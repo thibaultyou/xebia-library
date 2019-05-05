@@ -48,10 +48,14 @@ or
 docker-compose -f docker-compose.dev.yml up
 ```
 
+---
+
 Once your containers are started you can visit those links locally :
 
 - [Client](http://localhost:3000)
 - [Server](http://localhost:5000)
+
+Online demo is available [here](https://bit.ly/2VLv1wA).
 
 ## Cooking recipe
 
@@ -85,6 +89,7 @@ Once your containers are started you can visit those links locally :
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [CircleCI](https://circleci.com/)
+- [AWS EC2](https://aws.amazon.com/ec2/)
 
 ## Credits
 
