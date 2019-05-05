@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ACTIONS from '../../../modules/action';
+import ACTIONS from '../../../modules/actions';
 import BookCard from './BookCard.component';
 
 const mapDispatchToProps = dispatch => ({
