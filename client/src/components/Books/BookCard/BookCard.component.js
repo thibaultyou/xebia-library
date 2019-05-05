@@ -9,12 +9,8 @@ import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import styles from './BookCard.styles';
 
-const onClick = props => {
-  console.log(props);
-};
-
 const BookCard = props => {
-  const { classes, book } = props;
+  const { classes, book, addBook } = props;
 
   return (
     <Card className={classes.book}>
@@ -36,7 +32,7 @@ const BookCard = props => {
             <Button
               color="primary"
               variant="outlined"
-              onClick={() => onClick(book)}
+              onClick={() => addBook(book)}
             >
               Add to basket ...
             </Button>
@@ -57,6 +53,7 @@ const BookCard = props => {
 BookCard.propTypes = {
   classes: PropTypes.object.isRequired,
   book: PropTypes.object.isRequired,
+  addBook: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(BookCard);

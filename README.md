@@ -59,6 +59,7 @@ Once your containers are started you can visit those links locally :
 
 - [React](https://github.com/facebook/react)
 - [Apollo](https://github.com/apollographql/apollo-client)
+- [Redux](https://github.com/reduxjs/redux)
 - [Styled components](https://github.com/styled-components/styled-components)
 - [Material UI](https://github.com/mui-org/material-ui)
 - [NGINX](https://github.com/nginx/nginx)
