@@ -1,9 +1,5 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { Redirect } from 'react-router';
 
-const Fallback = () => (
-  <div>
-    <Typography variant="h4">Fallback</Typography>
-  </div>
-);
+const Fallback = () => <Redirect to="/" />;
 export default Fallback;
