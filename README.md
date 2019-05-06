@@ -34,18 +34,18 @@ Before anything, you need the following software installed on your machine :
 
 Run in a terminal (`sudo` might be needed) :
 
-> Production mode
+> Dev mode
 
 ```sh
-docker-compose up
+docker-compose -f docker-compose.dev.yml up
 ```
 
 or
 
-> Dev mode (you might rebuild your containers with `docker-compose build` when switching modes)
+> Production mode (you might rebuild your containers with `docker-compose build` when switching modes)
 
 ```sh
-docker-compose -f docker-compose.dev.yml up
+docker-compose up
 ```
 
 ---
@@ -79,6 +79,8 @@ Online demo is available [here](https://bit.ly/2VLv1wA).
 
 ### Testing & quality
 
+- [Jest](https://github.com/facebook/jest)
+- [Enzyme](https://github.com/airbnb/enzyme)
 - [Mocha](https://github.com/mochajs/mocha)
 - [EasyGraphQLTester](https://github.com/EasyGraphQL/easygraphql-tester)
 - [EsLint](https://github.com/eslint/eslint)
