@@ -4,6 +4,10 @@ export const Cover = styled.img`
   height: 64px;
 `;
 
+export const PriceContainer = styled.div`
+  margin: 10px;
+`;
+
 export const styles = theme => ({
   root: {
     width: '100%',

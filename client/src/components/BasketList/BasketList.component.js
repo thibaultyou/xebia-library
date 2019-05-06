@@ -4,9 +4,7 @@ import { Query } from 'react-apollo';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import TableFooter from '@material-ui/core/TableFooter';
 import Paper from '@material-ui/core/Paper';
 import RemoveIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
@@ -15,7 +13,8 @@ import { withStyles } from '@material-ui/core/styles';
 import { OFFERS_QUERY } from '../../queries';
 import Notification from '../Notification';
 import LoadingIndicator from '../LoadingIndicator';
-import { Cover, styles } from './BasketList.styles';
+import { PriceContainer, Cover, styles } from './BasketList.styles';
+import BasketHeader from './BasketHeader';
 
 import {
   getInitialPrice,
@@ -52,18 +51,11 @@ const BasketList = props => {
             return (
               <Paper className={classes.root}>
                 <Table className={classes.table}>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Cover</TableCell>
-                      <TableCell>Title</TableCell>
-                      <TableCell align="right">Price</TableCell>
-                      <TableCell />
-                    </TableRow>
-                  </TableHead>
+                  <BasketHeader />
                   <TableBody>
                     {basket.map((item, index) => (
                       <TableRow key={index}>
-                        <TableCell component="th" scope="item">
+                        <TableCell>
                           <Cover src={item.cover} />
                         </TableCell>
                         <TableCell>{item.title}</TableCell>
@@ -85,19 +77,18 @@ const BasketList = props => {
                       </TableRow>
                     ))}
                   </TableBody>
-                  <TableFooter>
-                    <TableRow>
-                      <TableCell align="right">
-                        <Typography variant="button">
-                          <b>
-                            Total : {initialPrice} - {reduction} € de réduction
-                            = {total} €
-                          </b>
-                        </Typography>
-                      </TableCell>
-                    </TableRow>
-                  </TableFooter>
                 </Table>
+                <PriceContainer>
+                  <Typography align="right" color="primary" variant="button">
+                    <b>Total :</b>
+                  </Typography>
+                  <Typography align="right" color="secondary">
+                    {initialPrice} - {reduction} € de réduction
+                  </Typography>
+                  <Typography align="right" color="secondary">
+                    <b>= {total}€</b>
+                  </Typography>
+                </PriceContainer>
               </Paper>
             );
           }
