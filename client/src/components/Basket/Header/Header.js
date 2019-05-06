@@ -4,7 +4,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 
-const BasketHeader = () => (
+const Header = () => (
   <TableHead>
     <TableRow>
       <TableCell>
@@ -21,4 +21,4 @@ const BasketHeader = () => (
   </TableHead>
 );
 
-export default BasketHeader;
+export default Header;

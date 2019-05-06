@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ACTIONS from '../../../modules/actions';
-import BookCard from './BookCard.component';
+import Card from './Card.component';
 
 const mapDispatchToProps = dispatch => ({
   addBook: book => dispatch(ACTIONS.addBook(book)),
@@ -9,4 +9,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   null,
   mapDispatchToProps,
-)(BookCard);
+)(Card);

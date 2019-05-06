@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import BasketList from './BasketList.component';
-import ACTIONS from '../../modules/actions';
+import List from './List.query';
+import ACTIONS from '../../../modules/actions';
 
 const mapStateToProps = state => ({
   basket: state.basket,
@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(BasketList);
+)(List);

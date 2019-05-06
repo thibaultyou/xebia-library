@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Snackbar from '@material-ui/core/Snackbar';
-import SnackbarWrapper from './SnackbarWrapper';
+import SnackbarContainer from './Snackbar';
 
 const Notification = props => {
   const { variant, message } = props;
@@ -17,7 +17,7 @@ const Notification = props => {
       autoHideDuration={5000}
       onClose={() => setOpen(false)}
     >
-      <SnackbarWrapper
+      <SnackbarContainer
         variant={variant}
         message={`${message}`}
         onClose={() => setOpen(false)}

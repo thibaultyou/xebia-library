@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SnackbarContent from '@material-ui/core/SnackbarContent';
 import WarningIcon from '@material-ui/icons/Warning';
 import { withStyles } from '@material-ui/core/styles';
-import styles from './SnackbarWrapper.styles';
+import styles from './Snackbar.styles';
 
 const variantIcon = {
   success: CheckCircleIcon,
@@ -18,7 +18,7 @@ const variantIcon = {
   info: InfoIcon,
 };
 
-function SnackbarWrapper(props) {
+const Snackbar = props => {
   const { classes, className, message, onClose, variant, ...other } = props;
   const Icon = variantIcon[variant];
 
@@ -44,9 +44,9 @@ function SnackbarWrapper(props) {
       {...other}
     />
   );
-}
+};
 
-SnackbarWrapper.propTypes = {
+Snackbar.propTypes = {
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
   message: PropTypes.node,
@@ -54,4 +54,4 @@ SnackbarWrapper.propTypes = {
   variant: PropTypes.oneOf(['success', 'warning', 'error', 'info']).isRequired,
 };
 
-export default withStyles(styles)(SnackbarWrapper);
+export default withStyles(styles)(Snackbar);

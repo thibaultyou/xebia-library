@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { AppContainer, theme } from './App.styles';
-import AppBar from '../components/AppBar';
-import Home from './Home';
-import Basket from './Basket';
-import Fallback from './Fallback';
+import AppBar from '../../components/AppBar';
+import Home from '../Home';
+import Basket from '../Basket';
+import Fallback from '../Fallback';
 
 const App = () => {
   return (

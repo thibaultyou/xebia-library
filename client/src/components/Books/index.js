@@ -1,2 +1,2 @@
-import Books from './Books';
-export default Books;
+import Tiles from './Tiles';
+export default Tiles;
