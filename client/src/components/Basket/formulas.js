@@ -39,3 +39,5 @@ export const getInitialPrice = items =>
 
 export const getLowerPrice = (initialPrice, prices) =>
   prices.reduce((min, p) => (p.price < min ? p.price : min), initialPrice);
+
+export const getRoundedValue = value => Math.round(value * 100) / 100;

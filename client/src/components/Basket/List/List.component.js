@@ -17,6 +17,7 @@ import {
   getInitialPrice,
   getPricesWithOffers,
   getLowerPrice,
+  getRoundedValue,
 } from '../formulas';
 
 export const List = props => {
@@ -26,8 +27,8 @@ export const List = props => {
   const initialPrice = getInitialPrice(basket);
   const withOffers = getPricesWithOffers(initialPrice, offers);
   const lowerPrice = getLowerPrice(initialPrice, withOffers);
-  const reduction = Math.round((initialPrice - lowerPrice) * 100) / 100;
-  const total = lowerPrice < 0 ? 0 : Math.round(lowerPrice * 100) / 100;
+  const reduction = getRoundedValue(initialPrice - lowerPrice);
+  const total = lowerPrice < 0 ? 0 : getRoundedValue(lowerPrice);
 
   return (
     <Paper className={classes.root}>
