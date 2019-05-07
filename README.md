@@ -14,6 +14,7 @@
   * [Server core components](#server-core-components)
   * [Testing & quality](#testing--quality)
   * [Environment](#environment)
+- [Possible improvements](#possible-improvements)
 - [Credits](#credits)
 - [License](#license)
 
