@@ -94,6 +94,20 @@ Online demo is available [here](https://bit.ly/2VLv1wA).
 - [CircleCI](https://circleci.com/)
 - [AWS EC2](https://aws.amazon.com/ec2/)
 
+## Possible improvements
+
+- End-to-end testing with [Cypress-io](https://github.com/cypress-io/cypress)
+- Snapshot testing with [Jest](https://github.com/facebook/jest)
+- Shopping cart management with [GraphQL mutations](https://graphql.org/learn/queries/#mutations)
+- API mocking with [Express.js](https://github.com/expressjs/express)
+- Search bar with [ElasticSearch](https://github.com/elastic/elasticsearch)
+- Continuous deployments on [Amazon ECS](https://aws.amazon.com/ecs/) or multi [Heroku Dynos](https://www.heroku.com/dynos)
+- CircleCI coverage reports with [Codecov](https://github.com/codecov/codecov-node)
+- Code analysis with [Code Climate](https://github.com/codeclimate/codeclimate) or [SonarQube](https://github.com/SonarSource/sonarqube)
+- Vocal control with [react-voice-components](https://github.com/grvcoelho/react-voice-components)
+- Intelligent conversational chatbot with [Dialogflow](https://cloud.google.com/dialogflow-enterprise/docs/reference/libraries/nodejs)
+- ...
+
 ## Credits
 
 - **[Thibault You](mailto:thibaultyou@gmail.com)** - _Developer_

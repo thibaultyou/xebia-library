@@ -31,7 +31,7 @@ describe('Offers formulas', () => {
     },
   ];
 
-  const expecteOffers = [
+  const expectedOffers = [
     { type: 'percentage', price: 61.75 },
     { type: 'minus', price: 50 },
     { type: 'slice', price: 65 },
@@ -42,14 +42,14 @@ describe('Offers formulas', () => {
   });
 
   it('should return prices with offers', () => {
-    expect(getPricesWithOffers(65, offers)).toStrictEqual(expecteOffers);
+    expect(getPricesWithOffers(65, offers)).toStrictEqual(expectedOffers);
   });
 
   it('should return lower price', () => {
-    expect(getLowerPrice(65, expecteOffers)).toBe(50);
+    expect(getLowerPrice(65, expectedOffers)).toBe(50);
   });
 
-  it('should return lower price', () => {
+  it('should return rounded value', () => {
     expect(getRoundedValue(37.772879897897)).toBe(37.77);
   });
 });
