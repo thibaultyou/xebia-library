@@ -105,7 +105,7 @@ Online demo is available [here](https://bit.ly/2VLv1wA).
 - Continuous deployments on [Amazon ECS](https://aws.amazon.com/ecs/) or multi [Heroku Dynos](https://www.heroku.com/dynos)
 - CircleCI coverage reports with [Codecov](https://github.com/codecov/codecov-node)
 - Code analysis with [Code Climate](https://github.com/codeclimate/codeclimate) or [SonarQube](https://github.com/SonarSource/sonarqube)
-- Vocal control with [react-voice-components](https://github.com/grvcoelho/react-voice-components)
+- Voice control with [react-voice-components](https://github.com/grvcoelho/react-voice-components)
 - Intelligent conversational chatbot with [Dialogflow](https://cloud.google.com/dialogflow-enterprise/docs/reference/libraries/nodejs)
 - ...
 
