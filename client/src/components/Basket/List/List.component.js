@@ -9,7 +9,8 @@ import RemoveIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import { PriceContainer, Cover, styles } from './List.styles';
+import { styles } from './List.styles';
+import { PriceContainer, Cover } from './List.styles';
 import Header from '../Header';
 
 import {
@@ -18,7 +19,7 @@ import {
   getLowerPrice,
 } from '../formulas';
 
-const List = props => {
+export const List = props => {
   const { classes, offers, parent } = props;
   const { basket, deleteBook } = parent;
 
@@ -74,6 +75,7 @@ const List = props => {
 List.propTypes = {
   classes: PropTypes.object.isRequired,
   parent: PropTypes.object.isRequired,
+  offers: PropTypes.array.isRequired,
 };
 
-export default withStyles(styles)(List);
+export const StyledList = withStyles(styles)(List);

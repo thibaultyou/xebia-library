@@ -79,6 +79,7 @@ Online demo is available [here](https://bit.ly/2VLv1wA).
 
 ### Testing & quality
 
+- [Renovate](https://github.com/renovatebot/renovate)
 - [Jest](https://github.com/facebook/jest)
 - [Enzyme](https://github.com/airbnb/enzyme)
 - [Mocha](https://github.com/mochajs/mocha)

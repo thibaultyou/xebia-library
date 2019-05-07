@@ -1,7 +1,10 @@
-const styles = theme => ({
-  root: {
-    width: '100%',
-  },
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  width: '100%';
+`;
+
+export const styles = theme => ({
   grow: {
     flexGrow: 1,
   },
@@ -19,5 +22,3 @@ const styles = theme => ({
     color: 'white',
   },
 });
-
-export default styles;

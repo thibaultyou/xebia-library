@@ -27,7 +27,6 @@
   },
   "scripts": {
     "prettier": "prettier --write src/**/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}",
-    "test:snap": "jest",
     "lint": "eslint . --cache; exit 0",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -52,12 +51,12 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.10.0",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
-    "eslint-config-react-app": "^4.0.0",
-    "jest-enzyme": "^7.0.2",
-    "prettier": "^1.17.0",
-    "react-test-renderer": "^16.8.6",
-    "redux-mock-store": "^1.5.3"
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.12.1",
+    "eslint-config-react-app": "4.0.0",
+    "jest-enzyme": "7.0.2",
+    "prettier": "1.17.0",
+    "react-test-renderer": "16.8.6",
+    "redux-mock-store": "1.5.3"
   }
 }

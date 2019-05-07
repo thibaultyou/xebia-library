@@ -2,14 +2,14 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import { BOOKS_QUERY } from '../../../queries';
 import Notification from '../../Notification';
-import LoadingIndicator from '../../LoadingIndicator';
+import Loader from '../../Loader';
 import Tiles from './Tiles.component';
 
 const TilesQuery = props => {
   return (
     <Query query={BOOKS_QUERY}>
       {({ loading, error, data }) => {
-        if (loading) return <LoadingIndicator />;
+        if (loading) return <Loader />;
         if (error) {
           return <Notification variant="error" message={`Books - ${error}`} />;
         }

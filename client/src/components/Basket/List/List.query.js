@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Query } from 'react-apollo';
 import { OFFERS_QUERY } from '../../../queries';
 import Notification from '../../Notification';
-import LoadingIndicator from '../../LoadingIndicator';
-import List from './List.component';
+import Loader from '../../Loader';
+import { StyledList } from './List.component';
 
 const ListQuery = props => {
   const { basket } = props;
@@ -16,7 +16,7 @@ const ListQuery = props => {
     <Fragment>
       <Query query={OFFERS_QUERY} variables={{ isbns }}>
         {({ loading, error, data }) => {
-          if (loading) return <LoadingIndicator />;
+          if (loading) return <Loader />;
           if (error) {
             return (
               <Notification variant="error" message={`Offers - ${error}`} />
@@ -24,7 +24,7 @@ const ListQuery = props => {
           }
 
           return data ? (
-            <List parent={props} offers={data.offers} />
+            <StyledList parent={props} offers={data.offers} />
           ) : (
             <Notification message="Failed to fetch offers ..." />
           );

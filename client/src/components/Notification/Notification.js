@@ -18,6 +18,7 @@ const Notification = props => {
       onClose={() => setOpen(false)}
     >
       <SnackbarContainer
+        key="message"
         variant={variant}
         message={`${message}`}
         onClose={() => setOpen(false)}
