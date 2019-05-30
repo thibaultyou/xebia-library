@@ -17,7 +17,7 @@
   "author": "Thibault YOU",
   "license": "GLWTPL",
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.19.0",
     "chalk": "2.4.2",
     "cors": "2.8.5",
     "express": "4.16.4",
