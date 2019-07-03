@@ -56,8 +56,6 @@ Once your containers are started you can visit those links locally :
 - [Client](http://localhost:3000)
 - [Server](http://localhost:5000)
 
-Online demo is available [here](https://bit.ly/2VLv1wA).
-
 ## Cooking recipe
 
 ### Client core components
