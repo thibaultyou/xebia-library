@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { styles } from './AppBar.styles';
 
 const mapStateToProps = state => ({
-  basket: state.basket,
+  basketLength: state.basket.length,
 });
 
 export default withStyles(styles)(

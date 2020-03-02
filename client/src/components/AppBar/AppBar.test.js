@@ -13,7 +13,7 @@ import { Container } from './AppBar.styles';
 
 describe('AppBar component', () => {
   const props = {
-    basket: [],
+    basketLength: 3,
   };
 
   it('should render all child components', () => {

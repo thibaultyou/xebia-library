@@ -11,7 +11,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { Container } from './AppBar.styles';
 
 const LibraryAppBar = props => {
-  const { classes, basket } = props;
+  const { classes, basketLength } = props;
 
   return (
     <Container>
@@ -33,7 +33,7 @@ const LibraryAppBar = props => {
           <div className={classes.grow} />
           <Link to="/basket" className={classes.link}>
             <IconButton aria-haspopup="true" color="inherit">
-              <Badge badgeContent={basket.length} color="secondary">
+              <Badge badgeContent={basketLength} color="secondary">
                 <ShoppingBasketIcon />
               </Badge>
             </IconButton>
@@ -46,7 +46,7 @@ const LibraryAppBar = props => {
 
 LibraryAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
-  basket: PropTypes.array.isRequired,
+  basketLength: PropTypes.number.isRequired,
 };
 
 export default LibraryAppBar;

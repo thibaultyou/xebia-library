@@ -1,6 +1,7 @@
 const styles = theme => ({
   book: {
     display: 'flex',
+    margin: 5,
   },
   bookDetails: {
     flex: 1,
