@@ -25,7 +25,7 @@
     "react-scripts": "3.4.0",
     "redux": "4.0.5",
     "redux-logger": "3.0.6",
-    "styled-components": "5.0.1"
+    "styled-components": "5.3.11"
   },
   "scripts": {
     "prettier": "prettier --write src/**/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}",
